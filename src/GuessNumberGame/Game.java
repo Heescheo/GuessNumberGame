@@ -8,21 +8,22 @@ package GuessNumberGame;
 import java.util.Random;
 
 public class Game {
-    Random random = new Random(); // initialiserer random
 
-    //metode der generere et tal mellem
-public int getNumber(){
-    return random.nextInt(10);
-}
-    //metode med if statement der tjekker guess mod det genererede tal
-public String checkGuess(int guess){
-    if (guess > getNumber()){
-        return "Too high";
-    }else if (guess < getNumber()){
-        return "Too low";
+    private Random random = new Random();
+    private int number;  // gem tallet her
+
+    public Game() {
+        number = random.nextInt(10) + 1; // 1-10
     }
-    else {
-        return "Correct";
+
+    public String checkGuess(int guess) {
+        if (guess > number) {
+            return "Too high";
+        } else if (guess < number) {
+            return "Too low";
+        } else {
+            return "Correct";
+        }
     }
 }
-}
+
