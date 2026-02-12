@@ -15,7 +15,7 @@ public int getNumber(){
     return random.nextInt(10);
 }
     //metode med if statement der tjekker guess mod det genererede tal
-public String checkGuess(){
+public String checkGuess(int guess){
     if (guess > getNumber()){
         return "Too high";
     }else if (guess < getNumber()){
