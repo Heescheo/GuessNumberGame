@@ -9,8 +9,7 @@ import java.util.Scanner;
 
 public class Player {
 
-    //Opretter ny scanner
-
+    // initialiserer scanner
     private Scanner scanner = new Scanner(System.in);
 
     //Returnerer spillerens gæt med getGuess()
