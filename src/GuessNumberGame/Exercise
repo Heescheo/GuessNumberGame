@@ -20,19 +20,20 @@ You must create at least three classes:
 1️⃣ GuessNumberApp (Main class)
 Responsible for:
 Starting the program
-Creating objects
+Creating objects -- scanner, random number generator (kalder getNumber())
 Running the game loop
+variabler -- int guess
 
 2️⃣ Game class
 Responsible for:
-Generating a random number
-Checking whether the guess is correct
-Giving feedback (too high / too low / correct)
+Generating a random number -- getNumber()
+Checking whether the guess is correct -- checkGuess ()
+Giving feedback (too high / too low / correct) -- if statement der returnere en string
 
 3️⃣ Player class
 Responsible for:
-Reading user input
-Returning the player's guess
+Reading user input -- scanner.nextInt()
+Returning the player's guess -- getGuess()
 
 ⭐ Bonus Challenges (Optional)
 If you finish early:
