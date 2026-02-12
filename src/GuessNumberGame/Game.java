@@ -1,9 +1,9 @@
 package GuessNumberGame;
 
 //Responsible for:
-//Starting the program
-//Creating objects
-//Running the game loop
+//Generating a random number
+//Checking whether the guess is correct
+//Giving feedback (too high / too low / correct)
 
 public class Game {
 }
