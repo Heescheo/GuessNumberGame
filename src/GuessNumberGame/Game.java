@@ -10,19 +10,20 @@ import java.util.Random;
 public class Game {
     Random random = new Random(); // initialiserer random
 
-    //metode der generere et tal mellem
+    //metode der generere et tal mellem 0-10
 public int getNumber(){
-    return random.nextInt(10);
+    return random.nextInt(11);
 }
     //metode med if statement der tjekker guess mod det genererede tal
 public String checkGuess(){
-    if (guess > getNumber()){
+    if (guess() > getNumber()){
         return "Too high";
     }else if (guess < getNumber()){
         return "Too low";
-    }
-    else {
+    } else if (guess == getNumber()) {
         return "Correct";
+    } else {
+        return "Error"; // f.eks. hvis gættet er uden for 0-10
     }
 }
 }
