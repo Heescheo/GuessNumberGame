@@ -13,7 +13,6 @@ public class Player {
     private Scanner scanner = new Scanner(System.in);
 
     //Returnerer spillerens gæt med getGuess()
-
     public int getGuess(String prompt) {
         System.out.print(prompt + " ");
         return scanner.nextInt();
