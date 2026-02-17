@@ -12,8 +12,8 @@ public class Game {
     private Random random = new Random();
     private int number;  // gem tallet her
 
-    public Game() {
-        number = random.nextInt(10) + 1; // 1-10
+    public Game(int maxNumber) {
+        number = random.nextInt(maxNumber) + 1; // lavet til maxnumber så spilleren selv kan bestemme
     }
 
     public String checkGuess(int guess) {
